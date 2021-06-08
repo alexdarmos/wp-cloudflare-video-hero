@@ -1,0 +1,17 @@
+<div class="video-container video-background">
+
+    <div id="home-hero-text-box">
+        <p id="htb-p1"><span class="italic-PF">Your Smile</span> Is Our Passion<span class="trade-mark">™</span></p>
+        <p id="htb-p2">Welcome to our relaxing,<br> spa-like office</p>
+        <a id="htb-button" href="/request-appointment/" style="float: left; margin-left: 10px;">Watch Our Video<span id="htb-button-arrow-con">&nbsp;</span></a>
+        <a id="htb-button" href="/request-appointment/" style="float: right; margin-right: 10px;">Request an Appointment <span id="htb-button-arrow-con">&nbsp;</span></a>
+    </div>
+
+    <div class="video-foreground">
+        <div class="video-inner">
+            <img class="hero-thumbnail" src="<?php $image = get_field('video_thumbnail') !== "" ? get_field('video_thumbnail') : '#'; echo esc_url( $image['url'] ); ?>" alt="dental services kalamazoo mi" title="dental services kalamazoo mi" />
+            <iframe class="hero-iframe" src="https://iframe.videodelivery.net/<?php esc_html_e( get_field( 'cloudflare_id' ) ); ?>?muted=true&preload=true&loop=true&autoplay=true&controls=false" 	style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+</div>
